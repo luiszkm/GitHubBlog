@@ -6,7 +6,7 @@ export const userAPi = axios.create({
 })
 
 export const issueApi = axios.create({
-baseURL: 'https://api.github.com/repos/GitHubBlog/issues/1'
+baseURL: 'https://api.github.com/repos/luiszkm/GitHubBlog/issues/1'
 })
 
 

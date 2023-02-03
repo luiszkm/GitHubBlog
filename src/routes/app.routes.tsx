@@ -7,7 +7,7 @@ import { DefaultLayout } from '../layouts/DefaultLayout'
 export function AppRoutes(){
 
   return(
-    <Routes>
+    <Routes >
       <Route path='/' element={<DefaultLayout/>}>
       <Route path='/' element={<Home/>}/>
 

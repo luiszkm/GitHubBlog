@@ -9,9 +9,11 @@ export function DefaultLayout() {
 
   return (
     <BlogProvider>
-      <div>
+      <div className="text-md flex flex-col items-center bg-base-bg w-full min-h-screen">
         <Header />
-        <Outlet />
+        <div className="w-full max-w-[864px]">
+          <Outlet />
+        </div>
       </div>
     </BlogProvider>
   )

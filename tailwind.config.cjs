@@ -6,6 +6,7 @@ module.exports = {
     colors: {
       white: "#FFFFFF",
       transparent: "transparent",
+      blue: "#3294F8",
       base: {
         title: "#E7EDF4",
         subtitle: "#C4D4E3",

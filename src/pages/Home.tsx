@@ -11,7 +11,7 @@ console.log(userData);
 
   return(
     <div>
-      <Hero />
+      <Hero data={userData} />
     </div>
   )
 }

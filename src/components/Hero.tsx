@@ -47,7 +47,7 @@ export function Hero({ data }: HeroProps) {
         </div>
       </div>
 
-      <NavLink className="text-blue font-bold text-xs absolute top-8 right-8 flex items-center gap-2"
+      <NavLink className="text-blue font-bold text-xs absolute top-8 right-8 flex items-center gap-2 hover:border-b transition"
         to={data.html_url} target='_blank'>
         Github
         <BsBoxArrowUpRight />

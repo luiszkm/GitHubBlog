@@ -9,7 +9,7 @@ export function DefaultLayout() {
 
   return (
     <BlogProvider>
-      <div className="text-md flex flex-col items-center bg-base-bg w-full min-h-screen">
+      <div className="text-md flex flex-col items-center bg-base-bg w-full min-h-screen antialiased">
         <Header />
         <div className="w-full max-w-[864px]">
           <Outlet />

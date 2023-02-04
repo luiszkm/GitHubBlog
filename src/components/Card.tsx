@@ -10,7 +10,7 @@ interface CardPRops {
 
 export function Card({ title, body, created_at, updated_at }: CardPRops) {
 
-  const postPreview =body.substring(0,220)
+  const postPreview = body.substring(0, 220)
 
 
   return (
@@ -18,10 +18,10 @@ export function Card({ title, body, created_at, updated_at }: CardPRops) {
       <div className="flex w-full items-center justify-between">
         <h3 className="font-bold text-xl text-base-title">{title}</h3>
         <time className="text-base-span">
-          {updated_at === null ?
-            `Hà ${DateDiferenceInDays(created_at)}` :
-            `Hà ${DateDiferenceInDays(updated_at)}`
-          }</time>
+          {
+            `Hà ${DateDiferenceInDays(created_at)} dias`
+          }
+        </time>
       </div>
 
       <ReactMarkdown className="text-base-text text-left">

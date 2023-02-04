@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Header } from "../components/Header";
 import { BlogProvider } from "../context/blogContext";
+import { Footer } from "../components/Footer";
 
 
 
@@ -14,6 +15,7 @@ export function DefaultLayout() {
         <div className="w-full max-w-[864px]">
           <Outlet />
         </div>
+        <Footer />
       </div>
     </BlogProvider>
   )

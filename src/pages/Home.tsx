@@ -1,15 +1,18 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Hero } from "../components/Hero";
-import { useBlog } from "../hooks/useBlog";
 import { blogContext } from "../context/blogContext";
 import { SearchBar } from "../components/SearchBar";
 import { Card } from "../components/Card";
+import { NavLink } from "react-router-dom";
 
 
 
 export function Home() {
-  const { userData } = useContext(blogContext)
-  console.log(userData);
+  const { userData, postsData } = useContext(blogContext)
+
+
+
+
 
   return (
     <div className="flex flex-col items-center gap-12 w-full">
@@ -25,8 +28,21 @@ export function Home() {
       </div>
 
       <section className=" grid grid-cols-1 md:grid-cols-2 gap-8">
-        <Card />
-        <Card />
+        {
+          postsData &&
+          postsData.map(post => (
+            <NavLink key={String(post.id)}
+             to={`/post/${post.number}`}>
+              <Card key={String(post.id)}
+                title={post.title}
+                created_at={post.created_at}
+                body={post.body}
+                updated_at={post.updated_at}
+              />
+            </NavLink>
+          ))
+        }
+
       </section>
     </div>
   )

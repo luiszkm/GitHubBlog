@@ -1,25 +1,32 @@
-
+import { DateDiferenceInDays } from "../utils/DateDiferenceInDays"
+import ReactMarkdown from 'react-markdown'
 
 interface CardPRops {
   title: string
   body: string
-  created_at: any
+  created_at: string
+  updated_at?: string | null
 }
 
-export function Card() {
+export function Card({ title, body, created_at, updated_at }: CardPRops) {
+
+  const postPreview =body.substring(0,220)
 
 
   return (
-    <div className="p-8 min-h-[260px] w-full flex flex-col gap-5 items-center cursor-pointer bg-base-post rounded-xl hover:border hover:border-base-label">
-      <div className="flex items-center justify-between">
-        <h3 className="font-bold text-xl text-base-title">JavaScript data types and data structures</h3>
-        <time className="text-base-span">há 1 dia</time>
+    <div className="p-8 min-h-[260px] w-full flex flex-col gap-5 items-center cursor-pointer bg-base-post rounded-xl  hover:border hover:border-base-label">
+      <div className="flex w-full items-center justify-between">
+        <h3 className="font-bold text-xl text-base-title">{title}</h3>
+        <time className="text-base-span">
+          {updated_at === null ?
+            `Hà ${DateDiferenceInDays(created_at)}` :
+            `Hà ${DateDiferenceInDays(updated_at)}`
+          }</time>
       </div>
 
-      <p className="text-base-text text-left">
-        Programming languages all have built-in data structures, but these often differ from one language to another.
-        This article attempts to list the built-in data structures available in
-      </p>
+      <ReactMarkdown className="text-base-text text-left">
+        {postPreview}
+      </ReactMarkdown>
     </div>
   )
 }

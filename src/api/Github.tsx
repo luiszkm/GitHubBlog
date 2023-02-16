@@ -7,11 +7,11 @@ const githubRepor = import.meta.env.VITE_GUTHUB_REPOR
 
 
 export const userAPi = axios.create({
-   baseURL: `https://api.github.com/users/${githubUSer}`
+   baseURL: `https://api.github.com/users/${githubUSer}` || "https://api.github.com/users/luiszkm"
 })
 
 export const issueApi = axios.create({
-   baseURL: `https://api.github.com/repos/${githubUSer}/${githubRepor}/issues`
+   baseURL: `https://api.github.com/repos/${githubUSer}/$ {githubRepor}/issues` || "https://api.github.com/repos/luiszkm/GitHubBlog/issues"
 })
 
 

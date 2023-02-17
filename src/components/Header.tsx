@@ -1,7 +1,5 @@
 import logo from '../assets/LogoHeader.svg'
 
-
-
 export function Header () {
 
 

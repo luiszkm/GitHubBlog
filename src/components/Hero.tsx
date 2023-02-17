@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { userAPi } from "../api/Github"
 import { NavLink } from "react-router-dom";
 import { AiFillGithub } from 'react-icons/ai';
 import { BsBoxArrowUpRight } from 'react-icons/bs';

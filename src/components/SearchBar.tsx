@@ -1,5 +1,4 @@
-import { useContext, useEffect, useState } from "react"
-import { searchApi } from "../api/Github"
+import { useContext, useState } from "react"
 import { blogContext } from "../context/blogContext"
 
 

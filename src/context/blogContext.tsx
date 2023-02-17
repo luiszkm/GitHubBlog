@@ -86,7 +86,6 @@ export function BlogProvider({ children }: BlogContextProvider) {
     }
   }
 
-
   async function fetchSearchIssueGithub() {
     try{
       if(searchContent !== ''){
@@ -95,16 +94,11 @@ export function BlogProvider({ children }: BlogContextProvider) {
        
       }
    
-      console.log(postsDataFiltered)
     }catch(error){
-
+      console.log(error);
+      
     }
-
-    
   }
-
-
-
   useEffect(() => {
     fetchUserApi(),
       fetchIssueGithubApi()

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const githubUSer = import.meta.env.VITE_GITHUB_USER
-const githubRepor = import.meta.env.VITE_GUTHUB_REPOR
+const githubRepor = import.meta.env.VITE_GITHUB_REPOR
 
 
 

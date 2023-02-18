@@ -7,7 +7,7 @@ PRojeto para cusumir a API do github ( GitHub Users API , GitHub Search API, Git
 - Listar e filtrar todas as issues do repositório com um pequeno resumo do conteúdo dela
 - Criar uma página para exibir um post (issue) completo
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/75245a5c-7c0a-49f8-8d80-c8d1e9c8de56/deploy-status)](https://app.netlify.com/sites/ignitelab-ds/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/75245a5c-7c0a-49f8-8d80-c8d1e9c8de56/deploy-status)](https://app.netlify.com/sites/bespoke-wisp-0a6461/deploys)
 
 ## Stack utilizada
 

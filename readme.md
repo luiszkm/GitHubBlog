@@ -1,5 +1,5 @@
 # Github Blog
-PRojeto para cusumir a API do github ( GitHub Users API , GitHub Search API, GitHub Issues API)
+Projeto para consumir a API do github ( GitHub Users API , GitHub Search API, GitHub Issues API)
 
 ## funcionalidades
 

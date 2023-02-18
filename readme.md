@@ -19,7 +19,7 @@ PRojeto para cusumir a API do github ( GitHub Users API , GitHub Search API, Git
 
 
 
-![App Screenshot](/public/github-blog.png)
+![App Screenshot](./public/img/github-blog.png)
 
 
 ## Instalação
